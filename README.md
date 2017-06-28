@@ -1,5 +1,6 @@
 # Setup Instructions
 * Clone the repo
+* rm -rf .git
 * Open package.json, change 'name' and any other applicable fields to your new projects information.
 * Repeat the previous step for bower.json
 * If using any CSS frameworks, in index.html uncomment the vendor.min.css link in the head
