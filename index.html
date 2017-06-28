@@ -2,13 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>legislators</title>
     <!-- <link rel="stylesheet" href="build/css/vendor.css"> UNCOMMENT IF YOU INSTALL ANY CSS COMPONENTS WITH BOWER -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
     <link rel="stylesheet" href="build/css/styles.css">
     <script type="text/javascript" src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
   </head>
   <body>
-    <!-- GIVE ME SOME HTML, YO! -->
+    <!-- container -->
+    <div class="container">
+      <!-- state search -->
+      <div class="state-search">
+        <h1>State Search</h1>
+        <form class="state-search-form">
+          <label for="search-bar">Enter a state</label>
+          <input type="text" name="search-bar" value="OR">
+          <button type="button" name="button">search</button>
+        </form>
+        <!-- state search end -->
+      </div>
+      <!-- legislator-search -->
+      <div class="legislator-search">
+        <h1>legislator search</h1>
+        <div class="scroll-window">
+          <ul>
+            <li>jung dungus</li>
+            <li>herbert dargwell</li>
+            <li>roberta yeah</li>
+          </ul>
+        </div>
+        <!-- legislator-search end -->
+      </div>
+      <!-- container end -->
+    </div>
+    <div class="contributor-web">
+
+      <div class="legislator">
+        <h2 id="name"></h2>
+        <h3 id="party"></h3>
+        <h3 id="office"></h3>
+      </div>
+
+    </div>
   </body>
 </html>

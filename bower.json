@@ -1,6 +1,6 @@
 {
-  "name": "Sample-Project",
-  "description": "This is a scaffold for a sample project",
+  "name": "open-secrets-api-test",
+  "description": "This is an API call tester",
   "main": "index.js",
   "license": "ISC",
   "homepage": "",

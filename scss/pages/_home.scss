@@ -1,0 +1,36 @@
+body {
+  background: lightblue;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.state-search {
+  display: flex;
+  align-content: space-between;
+  border: 1px solid pink;
+  width: 40vw;
+  display: none;
+}
+
+.state-search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.legislator-search {
+  border: 1px solid red;
+}
+
+.legislator {
+  @include grid-column(5, $neat-grid);
+  border: 1px solid green;
+  display: none;
+}
