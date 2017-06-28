@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dani Trulls and Jared Eiseman",
+  "author": "PAIR_NAME_HERE and Charles Emrich",
   "license": "ISC",
   "devDependencies": {
     "bower-files": "^4.0.0",
