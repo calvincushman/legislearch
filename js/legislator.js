@@ -1,23 +1,17 @@
 var apiKey = require('./../.env').apiKey;
 
-var Legislator = function() {
+var Legislator = function(cid) {
+  this.cid = cid;
 };
 
-Legislator.prototype.getLegislators = function(query, callback) {
-  $.get(`http://www.opensecrets.org/api/?method=getLegislators&id=${query}&apikey=${apiKey}&output=json`)
-    .then(function(resp) {
-      var legObj = JSON.parse(resp).response.legislator['@attributes'];
-      callback(legObj.firstlast);
-      console.log(legObj);
-    });
-};
-
-Legislator.prototype.getContributors = function(cid, callback) {
-  $.get(`http://www.opensecrets.org/api/?method=candContrib&cid=${cid}&apikey=${apiKey}&output=json&cycle=2016`)
+Legislator.prototype.getContributors = function(callback) {
+  $.get(`http://www.opensecrets.org/api/?method=candContrib&cid=${this.cid}&apikey=${apiKey}&output=json&cycle=2016`)
     .then(function(resp) {
       var respObj = JSON.parse(resp).response.contributors;
-      callback(respObj.contributor[0]['@attributes'].pacs);
       console.log(respObj);
+    })
+    .fail(function(error) {
+      console.log(error);
     });
 };
 

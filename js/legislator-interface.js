@@ -5,6 +5,5 @@ var setText = function(text) {
 
 
 $(document).ready(function() {
-  var ourLegislator = new Legislator();
-  ourLegislator.getLegislators("N00033474", setText);
+  
 });

@@ -16,7 +16,7 @@ body {
   align-content: space-between;
   border: 1px solid pink;
   width: 40vw;
-  display: none;
+  display: flex;
 }
 
 .state-search-form {
@@ -27,10 +27,19 @@ body {
 
 .legislator-search {
   border: 1px solid red;
+  display: flex;
 }
 
 .legislator {
-  @include grid-column(5, $neat-grid);
   border: 1px solid green;
-  display: none;
+  height: 70%;
+  width: 70%;
+  border-radius: 50%
+}
+
+.donor {
+  border: 1px solid purple;
+  height: 50%;
+  width: 50%;
+  border-radius: 100%
 }
