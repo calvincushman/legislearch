@@ -1,8 +1,8 @@
 var Legislator = require('./../js/legislator.js').legislatorModule;
 var displayContributors = function(legislator, contributors) {
   $('#name').text(legislator.name);
-  $('#party').text(legislator.party);
-  $('#office').text(legislator.office);
+  $('#party').text(`Party: ${legislator.party}`);
+  $('#office').text(`Office: ${legislator.office}`);
   $('.contributor-web').empty();
   contributors.contributor.forEach(function(element) {
     $('.contributor-web').append(`<div class="donor">` + `<h2>${element["@attributes"].org_name}</h2>` +
@@ -16,10 +16,9 @@ var contribClickHandler = function(element) {
     // console.log($(this)[0].dataset.cid); //An alternate way to access the CID of the clicked li.
     var ourLegislator = new Legislator(element["@attributes"].firstlast, element["@attributes"].party, element["@attributes"].office, element["@attributes"].cid);
     ourLegislator.getContributors(displayContributors);
-    //And move us to the contributor view;
+
+    $('.state-search').css('display', 'none');
+    $('.legislator-search').css('display', 'none');
+    $('.contributor-page').css('display', 'flex');
   });
 };
-
-$(document).ready(function() {
-
-});

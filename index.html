@@ -17,39 +17,38 @@
       <div class="state-search">
         <h1>Legislearch</h1>
         <form class="state-search-form">
-          <label for="search-bar">Enter a state</label>
-          <input type="text" name="search-bar" value="OR">
-          <button id="button" type="submit" name="button">search</button>
+          <h3>Enter a state</h3>
+          <div class="form-group">
+            <input type="text" name="search-bar" value="OR">
+            <button id="button" type="submit" name="button">search</button>
+          </div>
         </form>
         <!-- state search end -->
       </div>
       <!-- legislator-search -->
       <div class="legislator-search">
-        <h1>legislator search</h1>
-        <div class="scroll-window">
-          <ul>
-          </ul>
-        </div>
+        <button id="state-button" type="button" name="button">back</button>
+        <h1 class="state-name">legislator search</h1>
+        <div class="scroll-outer">
+            <div class="scroll-window">
+              <ul>
+              </ul>
+            </div>
+          </div>
         <!-- legislator-search end -->
       </div>
-      <div class="contributor-web">
-        <div class="donor">
-          <h2>Neke</h2>
-        </div>
-        <div class="donor">
-          <h2>Intul</h2>
-        </div>
+      <div class="contributor-page">
+        <button id="leg-button" type="button" name="button">Back</button>
         <div class="legislator">
-          <h2 id="name">Susan Bonamici</h2>
-          <h3 id="party">D</h3>
-          <h3 id="office">OR01</h3>
+          <h2 id="name"></h2>
+          <div class="party-office">
+            <h3 id="party"></h3>
+            <h3 id="office"></h3>
+          </div>
         </div>
-        <div class="donor">
-          <h2>Goodle</h2>
+        <div class="contributor-web">
         </div>
-        <div class="donor">
-          <h2>Berkshire Hathaway</h2>
-        </div>
+
       </div>
       <!-- container end -->
     </div>
