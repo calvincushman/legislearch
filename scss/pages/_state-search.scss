@@ -1,0 +1,44 @@
+.state-search {
+  display: flex;
+  align-items: center;
+  width: 45vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  background: rgba(168, 201, 255, 0.6);
+  border-radius: 15px;
+  h1 {
+    font-size: 60px;
+    font-family: 'Arvo', serif;
+    margin-top: 8%;
+    margin-bottom: 10%;
+  }
+}
+
+.state-search-form {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  label, input {
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+
+
+#button {
+  font-family: 'Arvo', serif;
+  font-size: 15px;
+  color: blue;
+  background: red;
+  background: -webkit-linear-gradient(red, white);
+  background: -o-linear-gradient(red, white);
+  background: -moz-linear-gradient(red, white);
+  background: linear-gradient(red, white);
+  border-radius: 12px;
+  margin-top: 10px;
+  height: 35px;
+  width: 75px;
+}
